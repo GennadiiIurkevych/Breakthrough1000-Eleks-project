@@ -1,26 +1,19 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Header from "./Header";
 
 export default function Home() {
 	return (
 		<div className={styles.container}>
 			<Head>
 				<title>Breakthrough1000</title>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/beating-heart.gif" />
 			</Head>
-
+			<Header />
 			<main className={styles.main}>
-				<h1 className={styles.title}>
-					Welcome to <a href="https://nextjs.org">
-						Next.js!</a> integrated with{" "}sss
-					<a href="https://mui.com/">Material-UI!</a>
-				</h1>
+				<h1 className={styles.title}></h1>
 				<p className={styles.description}>
-					Get started by editing{" "}
-					<code className={styles.code}>
-						pages/index.js</code>
 				</p>
-
 			</main>
 		</div>
 	);
