@@ -10,14 +10,10 @@ export default function Home() {
 				<link rel="icon" href="/beating-heart.gif" />
 			</Head>
 			<Header />
-
-
 			<main className={styles.main}>
-				<h1 className={styles.title}>
-					
+				<h1 className={styles.title}>	
 				</h1>
 				<p className={styles.description}>
-	
 				</p>
 			</main>
 		</div>

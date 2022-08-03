@@ -4,7 +4,6 @@ import Header from './Header';
 
 export default function User({user}) {
   const {query} = useRouter()
-
   return (
     <Header keywords={user.name}>
       <div className={styles.user}>
