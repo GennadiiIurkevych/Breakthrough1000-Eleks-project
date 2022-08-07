@@ -1,12 +1,12 @@
 import Header from './components/Header';
-import styles from "../styles/Home.module.css";
+import styles from "../styles/advices.module.scss";
 
 const Advice = () => {
   return (
     <>
       <Header keywords={Advice} />
       <div className={styles.container}>
-        <h1>INTERESTING THINKS</h1>
+        <h1 className={styles.advice}>INTERESTING THINKS</h1>
       </div>
     </>
   );
