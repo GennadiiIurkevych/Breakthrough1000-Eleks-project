@@ -6,7 +6,7 @@ const Advice = () => {
     <>
       <Header keywords={Advice} />
       <div className={styles.container}>
-
+        <h1>INTERESTING THINKS</h1>
       </div>
     </>
   );
