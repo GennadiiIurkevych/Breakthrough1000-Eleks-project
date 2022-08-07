@@ -8,7 +8,7 @@
 }
 
 .header {
-  background: rgba(171, 8, 236, 0.6);
+  background: rgba(21, 3, 179, 0.842);
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -18,7 +18,7 @@
 
 .h {
   display: flex;
-  color: rgb(236, 15, 170);
+  color: rgb(15, 236, 236);
   font-size: 80px;
   align-items: center;
   margin-top: 66px;
@@ -27,7 +27,7 @@
 
 .p {
   display: flex;
-  color: rgb(9, 218, 26);
+  color: rgb(226, 17, 10);
   font-size: 100px;
   margin-bottom: 114px;
   
@@ -62,13 +62,27 @@
 }
 
 .link {
+  width: 126px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  text-align: center; 
   text-decoration: none;
   color: white;
-  font-size: 20px;
-  margin: 10px;
+  font-size: 18px;
+  margin: 5px;
+}
+
+.link:hover {
+  border-color:aqua;
+  color: aqua;
 }
 
 .a {
   text-decoration: none;
   color: rgb(202, 19, 5);
+}
+
+.pageHome {
+  display: flex;
+  text-decoration: none;
 }

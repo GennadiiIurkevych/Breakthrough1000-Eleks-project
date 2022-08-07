@@ -1,10 +1,15 @@
 .container {
-  padding: 0 ;  
+  padding: 0 ;
+  width: 100%;
+  height: 1200px;  
   background-position: center;
-  background-image: url("../public/Fotos\ para\ portadas\ y\ fondos\ -\ Fondos\ para\ Whatsapp.jpg");
+  background-image: url("../public/Backgr.jpg");
   background-size: cover;
 }
-
+ .users {
+  margin: 0;
+ }
+ 
 .main {
 
   min-height: 100vh;
