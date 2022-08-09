@@ -6,17 +6,12 @@ import Britishflag from '../../public/british-flag.gif';
 import Heart from '../../public/beating-heart.gif';
 import A from "./A";
 import Link from 'next/link';
-import { useRouter } from 'next/router'
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-//import {Link} from '@mui/material/Link';
 
 
 const Header = ({children, keywords}) => {
   
   return (
     <>
-    
       <div className={styles.maincontainer}>
         <div className={styles.header}>
           <Link className={styles.pageHome} href={'/'}>
