@@ -1,14 +1,16 @@
-
-import Header from './Header';
+import Header from './components/Header';
+import styles from '../styles/home.module.scss';
+import styles from "../styles/Home.module.css";
 
 const Home = () => {
   return (
-    <Header keywords={Home}>
-      <div>
-        <h1>Домашня сторінка</h1>
+    <>
+      <Header keywords={Home} />
+      <div className={styles.home}>
+        
       </div>
-    </Header>
-  );
+    </>
+  ); 
 };
 
 export default Home;
