@@ -4,8 +4,9 @@ import styles from '../../styles/Header.module.scss';
 import Ukrflag from '../../public/Ukr_flag.gif';
 import Britishflag from '../../public/british-flag.gif';
 import Heart from '../../public/beating-heart.gif';
-import A from "../A";
+import A from "./A";
 import Link from 'next/link';
+import { useRouter } from 'next/router'
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 //import {Link} from '@mui/material/Link';
@@ -21,7 +22,7 @@ const Header = ({children, keywords}) => {
           <Link className={styles.pageHome} href={'/'}>
             <a className={styles.pageHome}>
               <Image className={styles.heart} src={Heart} width={130} alt="heart" />
-              <h1 className={styles.h}>Breakthrough<p className={styles.p}>1000</p></h1>
+              <h1 className={styles.h}>Breakthrough<span className={styles.p}>1000</span></h1>
             </a>
           </Link>  
           <div className={styles.nav}>
