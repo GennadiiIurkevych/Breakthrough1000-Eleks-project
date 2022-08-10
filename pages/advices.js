@@ -1,12 +1,14 @@
-import Header from './Header';
-import styles from '../styles/advices.module.scss';
+import Header from './components/Header';
+import styles from "../styles/advices.module.scss";
+
 const Advice = () => {
   return (
-    <Header keywords={Advice}>
-      <div className={styles.advice}>
-        <h1>Поради</h1>
+    <>
+      <Header keywords={Advice} />
+      <div className={styles.container}>
+        <h1 className={styles.advice}>INTERESTING THINKS</h1>
       </div>
-    </Header>
+    </>
   );
 };
 

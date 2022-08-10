@@ -1,5 +1,5 @@
 import Link from "next/dist/client/link";
-import styles from '../styles/Header.module.scss';
+import styles from '../../styles/Header.module.scss';
 
 export default function A({text, href}) {
   return (
