@@ -1,3 +1,17 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 4px;
+  width: 100%;
+  height: 1200px;  
+  background-position: center;
+  background-image: url("../public/Backgr.jpg");
+  background-size: cover;
+}
+
+
+
 .user {
   background-position: center;
   background-image: url("../public/Backgr.jpg");
@@ -5,4 +19,28 @@
   h1 {
     color: rgb(4, 4, 80);
   }
+}
+
+
+
+.diary {
+  background: aqua;
+  display: flex;
+  width: 1500px;
+  height: 600px;
+  border:rgb(8, 8, 235) solid 3px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.pulse {
+  display: flex;
+  justify-content: flex-start;
+
 }
