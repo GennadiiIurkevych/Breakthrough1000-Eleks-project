@@ -4,14 +4,16 @@ import Header from './components/Header';
 import styles from "../styles/users.module.scss";
 import Variants from './components/skeleton.js';
 import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Image from "next/image";
 import Pulse from '../public/Pulse.png';
 import Timer from '../public/Timer.png';
+import Kardio from '../public/Pulse2.gif';
 import Avatar from '@mui/material/Avatar';
 import Gennadii from '../public/Gennadii.jpg';
+//import '../styles/globals.css';
+
 
 const Users = ({users}) => {
   return (
@@ -29,36 +31,57 @@ const Users = ({users}) => {
             </Stack>
           </div>
           <div className={styles.diary}>
-            <Stack spacing={100} direction="row">
-              <Box className={styles.button}
-              component="form"
-              sx={{
-                '& > :not(style)': { m: 1, width: '50ch' },
-              }}
-              noValidate
-              autoComplete="off"
-              >
-              <TextField className={styles.buttonDate} id="outlined-basic"  label="DATE" variant="outlined" />
-              <TextField className={styles.buttonBody} id="outlined-basic"  label="BODY WEIGHT" variant="outlined" />
-              <TextField className={styles.buttonBurn} id="outlined-basic"  label="YOU BURNED KCAL TODAY" variant="outlined" />
-              </Box>
-              <div className={styles.image}>
-                <Image className={styles.pulse} src={Pulse} width={260} alt="pulse"/>
-                <Image className={styles.timer} src={Timer} width={260} alt="timer"/>
+            <div className={styles.pulse}>
+            <Image src={Pulse}  alt="pulse"/>
+            </div>
+            <div className={styles.timer}>
+            <Image src={Timer}  alt="timer"/>
+            </div>
+              <div className={styles.lForm2}>
+                  <div className={styles.form2__div1}>
+                      <input type="date" className={styles.form2__input} placeholder=" " />
+                      <label for="" className={styles.form2__label}>DATE</label>
+                  </div>
+                  <div className={styles.form2__div2}>
+                      <input type="text" className={styles.form2__input} placeholder=" " />
+                      <label for="" className={styles.form2__label}>BODY WEIGHT</label>
+                  </div>
+                  <div className={styles.form2__div3}>
+                      <input type="text" className={styles.form2__input} placeholder=" " />
+                      <label for="" className={styles.form2__label}>BURNED KCAL TODAY</label>
+                  </div>
               </div>
-            </Stack>
-            <Stack className={styles.buttonZone} spacing={6} direction="row">
-              <Button variant="outlined">100-120</Button>    
-              <Button variant="outlined">120-140</Button>
-              <Button variant="outlined">140-160</Button>
-              <Button variant="outlined">160-180</Button>
-            </Stack>   
-            <Stack className={styles.buttonTime} spacing={6} direction="row">
-              <Button variant="outlined">TIME</Button>    
-              <Button variant="outlined">TIME</Button>
-              <Button variant="outlined">TIME</Button>
-              <Button variant="outlined">TIME</Button>
-            </Stack>
+            <div className={styles.buttonZone}>
+              <button className={styles.button}>100-120</button>    
+              <button className={styles.button}>120-140</button>
+              <button className={styles.button}>140-160</button>
+              <button className={styles.button}>160-180</button>
+            </div>   
+            <div className={styles.buttonTime}>
+              <div className={styles.lForm}>
+                  <div className={styles.form__div1}>
+                      <input type="number" className={styles.form__input} placeholder=" " />
+                      <label for="" className={styles.form__label}>TIME</label>
+                  </div>
+                  <div className={styles.form__div2}>
+                      <input type="number" className={styles.form__input} placeholder=" " />
+                      <label for="" className={styles.form__label}>TIME</label>
+                  </div>
+                  <div className={styles.form__div3}>
+                      <input type="number" className={styles.form__input} placeholder=" " />
+                      <label for="" className={styles.form__label}>TIME</label>
+                  </div>
+                  <div className={styles.form__div4}>
+                      <input type="number" className={styles.form__input} placeholder=" " />
+                      <label for="" className={styles.form__label}>TIME</label>
+                  </div>
+              </div>
+              <div className={styles.kardio}>
+                <Image src={Kardio}  alt="kardio"/>
+              </div> 
+            </div>
+           
+              
           </div>
           </div>
           {/* <h1 className={styles.users}>Користувачі</h1>
