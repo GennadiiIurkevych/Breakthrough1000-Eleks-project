@@ -8,6 +8,7 @@ export default class MyDocument extends Document {
 	render() {
 		return (
 			<Html lang="en">
+				<script	src="https://accounts.google.com/gsi/client" async defer></script>
 				<Head>
 					{/* PWA primary color */}
 					<meta name="theme-color"
