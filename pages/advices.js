@@ -1,4 +1,4 @@
-import Header from './components/Header';
+import Header from '../src/components/Header';
 import styles from "../styles/advices.module.scss";
 
 const Advice = () => {
