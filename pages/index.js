@@ -6,15 +6,6 @@ export default function Home() {
 	return (
 		<>
 			<Header />
-      
- 7-google-login
-			<main className={styles.main}>
-				<h1 className={styles.title}></h1>
-				<p className={styles.description}>
-				</p>
-			</main>
-		</div>
-
 			<div className={styles.container}>	
 				<Head>
 					<title>Breakthrough1000</title>
@@ -22,6 +13,23 @@ export default function Home() {
 				</Head>
 			</div>
 		</>
-
 	);
 }
+import Header from '../src/components/Header';
+import styles from '../styles/home.module.scss';
+import styles from "../styles/Home.module.css";
+
+
+const Home = () => {
+  return (
+    <>
+      <Header keywords={Home} />
+      <div className={styles.home}>
+        
+      </div>
+
+    </>
+  ); 
+};
+
+export default Home;
