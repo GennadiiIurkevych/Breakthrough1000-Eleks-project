@@ -14,7 +14,6 @@ export const UserProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [allowRender, setAllowRender] = useState(false);
 
-    //////////////////////////////
     function handleCallbackResponse(response) {
         let userObject = jwt_decode(response.credential);
         setUser(userObject);

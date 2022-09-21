@@ -6,13 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "serve": "concurrently \"npm run dev\" \"npm run mock\"",
+    "mock": "json-server -w db.json -p 4200 -d 450"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.9.3",
     "@mui/material": "^5.9.2",
+    "isomorphic-unfetch": "^3.1.0",
     "jwt-decode": "^3.1.2",
     "next": "12.2.3",
     "react": "18.2.0",
@@ -20,6 +23,7 @@
     "sass": "^1.54.0"
   },
   "devDependencies": {
+    "concurrently": "^7.4.0",
     "eslint": "8.20.0",
     "eslint-config-next": "12.2.3"
   }

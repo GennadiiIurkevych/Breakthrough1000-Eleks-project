@@ -3,6 +3,7 @@ import styles from "../styles/users.module.scss";
 import Variants from "../src/components/skeleton.js";
 import { useState } from "react";
 import DairyCard from "./dairyCard";
+import PrivateRoute from '../src/hoc';
 
 const Users = ({ users }) => {
   const [items, setItems] = useState([]);

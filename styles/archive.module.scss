@@ -6,7 +6,7 @@ $input-color: aqua;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 1800px;  
+
   background-position: center;
   background-image: url("../public/Backgr.jpg");
   background-size: cover;
@@ -22,21 +22,25 @@ $input-color: aqua;
 
 .userContainer {
   display: flex;
-  position: absolute;
-  margin-top:-3576px;
+
+
   margin-left: 152px;
 }
 
-.name {
-  margin-top: 914px;
+.userBlock {
   display: flex;
-  position: absolute;
+  align-items: center;
+}
+
+.name {
+  margin-top: 20px;
+  margin-left: 60px;
+  display: flex;
   justify-content: center;
-  width: 600px;
+  width: 460px;
   height: 55px;
   border:$first-color solid 3px;
   border-radius: 12px;
-  font-size: 50px;
   color:$first-color;
   align-items: center;
   background: $input-color;
@@ -44,10 +48,11 @@ $input-color: aqua;
 
 .photo { 
   display: flex;
-  position: absolute;
-  margin-top: 988px;
-  width: 180px;
-  height: 180px;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 60px;
+  width: 100px;
+  height: 100px;
   font-size: 50px;
   color: $first-color;
   border: $first-color solid 3px;
@@ -57,16 +62,28 @@ $input-color: aqua;
 
 .diary {
   background: $input-color;
-  display: flex;
-  position: absolute;
-  margin-top: 1176px;
+  // display: flex;
+  margin-top: 20px;
+  margin-left: 60px;
   width: 1500px;
-  height: 600px;
+
   border:$first-color solid 3px;
   border-radius: 12px;
+  padding: 2em;
+  box-sizing: border-box;
 }
 
+.zonesBlock{
+  display: flex;
+}
 
+.imageBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin-top: -98px;
+}
 
 .pulse {
   // display: flex;
@@ -81,7 +98,8 @@ $input-color: aqua;
   // flex-direction: column;
   width: 260px;
   // margin-top: 310px;
-  // margin-left: 60px;
+  margin-left: -24px;
+  margin-top: -100px;
 }
 
 .buttons {
@@ -90,10 +108,10 @@ $input-color: aqua;
   margin: 20px;
 }
 
-.buttonZone {
+.spanZone {
   display: flex;
   // position: absolute;
-  // margin-top: 152px;
+  margin-top: 56px;
   // margin-left: 400px;
 }
 
@@ -107,6 +125,7 @@ $input-color: aqua;
   border-radius: 12px;
   color: $first-color;
   background: $input-color;
+  text-align: center;
 }
 
 .buttonTime {
@@ -131,14 +150,6 @@ $input-color: aqua;
   }
 }
 
-.kardio {
-  display: flex;
-  position: absolute;
-  margin-top: 136px;
-  margin-left: 80px;
-  width: 1200px;
-  height: 160px;
-}
 
 $normal-font-size: 1rem;
 $small-font-size: .75rem;
@@ -146,8 +157,8 @@ $small-font-size: .75rem;
 .lForm {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  // margin-left: 136px;
+  margin-bottom: 40px;
+  margin-left: 136px;
 }
 
 .form{ 
@@ -156,77 +167,66 @@ $small-font-size: .75rem;
   border-radius: 1.5rem;
   box-shadow: 0 10px 25px rgba(10, 6, 236, 0.2);
   color: $first-color;
-    &__div {
-      position: relative;
+    &__div1{
+        width: 200px;
+        position: absolute;
+        border-radius: 12px;
+        height: 60px;
+        margin-bottom: 1.5rem;
+        color: $first-color;
+        background: $input-color;
+    }
+    &__div2{
       width: 200px;
+      position: absolute;
       border-radius: 12px;
       height: 60px;
-      // margin-bottom: 1.5rem;
-      margin:30px;
+      margin-bottom: 1.5rem;
+      margin-left: 520px;
       color: $first-color;
       background: $input-color;
     }
-    // &__div1{
-    //     width: 200px;
-    //     position: absolute;
-    //     border-radius: 12px;
-    //     height: 60px;
-    //     margin-bottom: 1.5rem;
-    //     color: $first-color;
-    //     background: $input-color;
-    // }
-    // &__div2{
-    //   width: 200px;
-    //   position: absolute;
-    //   border-radius: 12px;
-    //   height: 60px;
-    //   margin-bottom: 1.5rem;
-    //   margin-left: 520px;
-    //   color: $first-color;
-    //   background: $input-color;
-    // }
-    // &__div3{
-    //   width: 200px;
-    //   position: absolute;
-    //   border-radius: 12px;
-    //   height: 60px;
-    //   margin-bottom: 1.5rem;
-    //   margin-left: 1040px;
-    //   color: $first-color;
-    //   background: $input-color;
-    // }
-    // &__div4{
-    //   width: 200px;
-    //   position: absolute;
-    //   border-radius: 12px;
-    //   height: 60px;
-    //   margin-bottom: 1.5rem;
-    //   margin-left: 1560px;
-    //   color: $first-color;
-    //   background: $input-color;
-    // }
+    &__div3{
+      width: 200px;
+      position: absolute;
+      border-radius: 12px;
+      height: 60px;
+      margin-bottom: 1.5rem;
+      margin-left: 1040px;
+      color: $first-color;
+      background: $input-color;
+    }
+    &__div4{
+      width: 200px;
+      position: absolute;
+      border-radius: 12px;
+      height: 60px;
+      margin-bottom: 1.5rem;
+      margin-left: 1560px;
+      color: $first-color;
+      background: $input-color;
+    }
     &__input{
-      // position: absolute;
-      // top: 0;
-      // left: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      // height: 100%;
-      font-size: 38px;
+      height: 100%;
+      font-size: 36px;
       border: 3px solid $first-color;
       border-radius: .6rem;
       outline: none;
-      padding-top: -.2rem;
-      padding-left: .8rem;
+      padding: 1rem;
       background: none;
-      // z-index: 1;
+      z-index: 1;
       color: $first-color;
       font-family: 'Roboto', sans-serif; 
     }
     &__label{
       position: absolute;
-      left: 5rem;
-      top: 0.2rem;
-      padding: 0 .8rem;
+      left: 4.8rem;
+      top: .5rem;
+      padding: 0 .25rem;
       background-color: $input-color;
       color: $first-color;
       font-size: 32px;
@@ -259,74 +259,67 @@ $small-font-size: .75rem;
 
 .lForm2 {
   display: flex;
-  justify-content: center;
-  margin-left: 180px;
-  margin-top: 30px;
+  justify-content: space-between;
+  // margin-left: 180px;
+  // margin-top: 30px;
 }
 
 .form2 {
   width: 600px;
-  // padding: 4rem 2rem;
+  padding: 4rem 2rem;
   border-radius: 1.5rem;
   box-shadow: 0 10px 25px rgba(10, 6, 236, 0.2);
   color: $first-color;
+   &__div{
+    position: relative;
+    border-radius: 12px;
+    color: $first-color;
+    background: $input-color;
+   }
     &__div1{
       width: 500px;
-      position: absolute;
-      border-radius: 12px;
-      height: 60px;
-      margin-bottom: 1.5rem;
-      margin-left: 200px;
-      color: $first-color;
-      background: $input-color;
     }
     &__div2{
       width: 300px;
-      position: absolute;
-      border-radius: 12px;
-      height: 60px;
-      margin-bottom: 1.5rem;
-      margin-left: 1120px;
-      color: $first-color;
-      background: $input-color;
     }
     &__div3{
       width: 460px;
-      position: absolute;
-      border-radius: 12px;
-      height: 60px;
-      margin-bottom: 1.5rem;
-      margin-left: 2000px;
-      padding: 0 .25rem;
-      color: $first-color;
-      background: $input-color;
     }
     &__input{
-      position: absolute;
-      top: 0;
-      left: 0;
+      // position: absolute;
+      // top: 0;
+      // left: 0;
       width: 100%;
-      height: 100%;
-      font-size: 40px;
+      // height: 100%;
+      font-size: 44px;
+      font-weight: 700;
       border: 3px solid $first-color;
       border-radius: .6rem;
       outline: none;
-      padding: 1rem;
+      padding: .5rem;
       background: none;
-      z-index: 1;
-      color: red;
+      // z-index: 1;
+      color: rgb(202, 19, 5);
       font-family: 'Roboto', sans-serif; 
+    }
+    &__inputText{
+      text-align: center;
+      font-size: 44px;
+      color: $first-color;
+    }
+    &__inputWeigth {
+      color: $first-color;
     }
     &__label{
       position: absolute;
-      left: 6rem;
-      top: .8rem;
-      padding: 0 .25rem;
-      background-color: $input-color;
-      color: $first-color;
-      font-size: 28px;
+      left: 5rem;
+      top: 1rem;
+      padding: 0 0.25rem;
+      background-color: aqua;
+      color: blue;
+      font-size: 30px;
       font-weight: 700;
-      transition: .3s;
+      transition: 0.3s;
     }
 }
 
@@ -447,6 +440,3 @@ $small-font-size: .75rem;
     
   }
 
-// .download {
-//   height: 100% !impotent; 
-// }

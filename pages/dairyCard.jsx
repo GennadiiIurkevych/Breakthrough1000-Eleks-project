@@ -34,21 +34,23 @@ export default function DairyCard() {
         number4 * zoneCoef4;
 
     return (
-        <div className={styles.userContainer}>   
-            <div className={styles.name}>
-                {user ? <Typography variant="h3">
-                    { user?.name }
-                </Typography> : <LinearBuffer /> }  
-            </div>
-            <div>
-                <Stack direction="row" spacing={2}>
-                    <Avatar
-                        className={styles.photo}
-                        alt="User"
-                        src={user?.picture}
-                    />
-                </Stack>
-            </div>
+        <div className={styles.userContainer}>
+            
+                <div className={styles.name}>
+                    {user ? <Typography variant="h3">
+                        { user?.name }
+                    </Typography> : <LinearBuffer /> }    
+                </div>
+                <div>
+                    <Stack direction="row" spacing={2}>
+                        <Avatar
+                            className={styles.photo}
+                            alt="User"
+                            src={user?.picture}
+                        />
+                    </Stack>
+                </div>
+
             <div className={styles.diary}>
                 <div className={styles.lForm2}>
                     <div
