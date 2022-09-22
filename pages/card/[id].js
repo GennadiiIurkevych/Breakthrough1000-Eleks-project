@@ -1,7 +1,6 @@
 import React from 'react'
 
 
-
 const Card = ({ card }) => {
   return (
     <div>Card</div>
@@ -12,7 +11,7 @@ export const getStaticPaths = async () => {
   const response = await fetch('http://localhost:3000/api/cards');
   const cards = await response.json();
 
-  const paths = cards.map(c => ({params: {id: c._id}}))
+  const paths = cards.map(c => ({params: {id: c.id}}))
 
   return {paths, fallback: 'blocking'}
 }

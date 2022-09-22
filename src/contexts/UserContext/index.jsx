@@ -1,5 +1,4 @@
 import React, { useContext, useState, useEffect } from "react";
-import { CircularProgress } from "@mui/material";
 import jwt_decode from "jwt-decode";
 
 const defaultValue = {

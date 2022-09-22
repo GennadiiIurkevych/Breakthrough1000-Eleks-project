@@ -89,3 +89,26 @@ const Cards = ({ cards }) => {
 };
 
 export default Cards;
+
+
+// import React, { Component } from 'react'
+
+// export default class Fcomponent extends Component {
+//     constructor(props) {
+//       super(props)
+    
+//       this.state = {
+//          name: 'Button pressed'
+//       }
+//     }
+//   render() {
+//     return (
+//       <div>
+//         {/* <h1>Input: {this.props.date} (Fcomponent)</h1>
+//         <input value={this.props.input} onChange={this.props.handleChange} /> */}
+
+//         <button onClick={() => {this.props.updateData(this.state.name)}}>Press button</button>
+//       </div>
+//     )
+//   }
+// }

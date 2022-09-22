@@ -7,11 +7,17 @@ import Avatar from "@mui/material/Avatar";
 import Minuts from "./timer";
 import { useState } from "react";
 import { useUserContext } from "../src/contexts/UserContext";
-import React from "react";
+//import React from "react";
 import { Typography } from "@mui/material";
 import LinearBuffer from '../pages/download.jsx';
 
+//import Fcomponent from './Cards'
+
+
+
 export default function DairyCard() {
+
+
     const [number1, setNumber1] = useState(0);
     const [number2, setNumber2] = useState(0);
     const [number3, setNumber3] = useState(0);
@@ -139,3 +145,56 @@ function formatDate(date) {
         padTo2Digits(date.getDate()),
     ].join("-");
 }
+
+
+// import React, { Component } from 'react';
+// import Fcomponent from "./Cards";
+// import Fncomponent from '../pages/api/data/cards'
+
+// export default class Ccomponent extends Component {
+//     constructor(props) {
+//       super(props)
+    
+//       this.state = {
+//         // date: "today"
+//         // inputValue: ''
+//         name: "Button not press"
+//       };
+//     //   this.handleChange = this.handleChange.bind(this);
+//         this.updateData = this.updateData.bind(this);
+    
+//     }
+    
+//     // handleChange(event) {
+//     //     this.setState({
+//     //         inputValue: event.target.value
+//     //     })
+//     // }
+
+//     updateData = (value) => {
+//         this.setState({
+//            name: value
+//         })
+//     }
+
+
+    
+
+//     render() {
+//         return (
+//             <div>
+//                 {/* <p>Get {this.state.date} (Ccomponent)</p> */}
+//                 {/* тут передаємо значення date, а не стан. А в пропс (після дорівнює) передається його стан */}
+//                 {/* <Fcomponent 
+//                 input={this.state.inputValue}
+//                 handleChange={this.handleChange} /> */}
+//                 <p>State: {this.state.name}</p>
+
+//                 <Fcomponent updateData={this.updateData} />
+
+//                 {/* <Fncomponent input={this.state.inputValue} /> */}
+//             </div>
+//         );
+//     }
+// }
+
