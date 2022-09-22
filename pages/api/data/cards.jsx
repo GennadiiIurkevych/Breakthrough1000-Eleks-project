@@ -1,13 +1,10 @@
-import React, {Component} from "react";
 
 // export default class ArciveCardsId extends Component {
 //   constructor(props) {
 //     super(props);
 //     this.state = {
-
 //     }
 //   }
-
 //   render() {
 //   return (
 //     <div>
@@ -15,7 +12,6 @@ import React, {Component} from "react";
 //     </div>
 //   );
 // }
-
 // }
 
 export const cards = [
@@ -71,10 +67,8 @@ export const cards = [
 
 // export default class Fncomponent extends Component {
 //   constructor(props) {
-//     super(props)
-  
-//     this.state = {
-       
+//     super(props)  
+//     this.state = {     
 //     }
 //   }
 // render() {

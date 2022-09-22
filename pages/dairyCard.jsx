@@ -142,14 +142,12 @@ function formatDate(date) {
 }
 
 
-// import React, { Component } from 'react';
 // import Fcomponent from "./Cards";
 // import Fncomponent from '../pages/api/data/cards'
 
 // export default class Ccomponent extends Component {
 //     constructor(props) {
 //       super(props)
-    
 //       this.state = {
 //         // date: "today"
 //         // inputValue: ''
@@ -176,7 +174,6 @@ function formatDate(date) {
 //         return (
 //             <div>
 //                 {/* <p>Get {this.state.date} (Ccomponent)</p> */}
-//                 {/* тут передаємо значення date, а не стан. А в пропс (після дорівнює) передається його стан */}
 //                 {/* <Fcomponent 
 //                 input={this.state.inputValue}
 //                 handleChange={this.handleChange} /> */}

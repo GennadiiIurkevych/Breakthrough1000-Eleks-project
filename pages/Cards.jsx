@@ -91,8 +91,6 @@ const Cards = ({ cards }) => {
 export default Cards;
 
 
-// import React, { Component } from 'react'
-
 // export default class Fcomponent extends Component {
 //     constructor(props) {
 //       super(props)
