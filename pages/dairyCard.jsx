@@ -7,16 +7,11 @@ import Avatar from "@mui/material/Avatar";
 import Minuts from "./timer";
 import { useState } from "react";
 import { useUserContext } from "../src/contexts/UserContext";
-//import React from "react";
 import { Typography } from "@mui/material";
 import LinearBuffer from '../pages/download.jsx';
 
-//import Fcomponent from './Cards'
-
-
 
 export default function DairyCard() {
-
 
     const [number1, setNumber1] = useState(0);
     const [number2, setNumber2] = useState(0);
@@ -176,10 +171,7 @@ function formatDate(date) {
 //            name: value
 //         })
 //     }
-
-
-    
-
+   
 //     render() {
 //         return (
 //             <div>

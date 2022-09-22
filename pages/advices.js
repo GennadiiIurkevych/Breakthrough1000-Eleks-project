@@ -2,7 +2,6 @@ import { useCallback, useState, useMemo } from 'react';
 import { Box, Typography, FormControl, InputLabel, Input, FormHelperText, Button, CircularProgress, Link } from '@mui/material';
 import { useUserContext } from '../src/contexts/UserContext'
 import styless from "../styles/advices.module.scss";
-// import styles from '../styles/home.module.scss';
 import styles from "../styles/Home.module.css";
 
 import Header from '../src/components/Header';
@@ -12,7 +11,6 @@ import Avatar from "@mui/material/Avatar";
 
 const defaultQuery = 'How to '
 
-// import Hoc from '../src/hoc';
 
 
 const Advice = () => {
