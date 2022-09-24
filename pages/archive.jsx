@@ -3,6 +3,7 @@ import Cards from "./cards";
 import styles from "../styles/Home.module.css";
 import Header from '../src/components/Header';
 import Head from "next/head";
+import withLogin from '../src/hoc';
 
 function Archive({cards}) {
   return (
@@ -34,4 +35,6 @@ export const getStaticProps = async () => {
   }
 };
 
-export default Archive;
+// export default Archive;
+const WrappedAdvice = withLogin(Archive);
+export default WrappedAdvice;

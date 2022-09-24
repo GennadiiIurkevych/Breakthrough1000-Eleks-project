@@ -1,24 +1,25 @@
-import React from 'react';
+
 import Router from 'next/router';
-import useUserContext from './hoc';
+//import useUserContext from './hoc';
+import React, { useEffect } from 'react';
+import { useUserContext } from './contexts/UserContext';
 
 const login = '/login'; 
 
-export default WrappedComponent => {
-  const hocComponent = ({ ...props }) => <WrappedComponent {...props} />;
-  const { user } = useUserContext();
-  hocComponent.getInitialProps = async (context) => {
+
+  const WrappedComponent = ({children}) => {
+     const {user} = useUserContext();
     
-    if (!user) {
-        Router.replace(login);
-      
-    } else if (WrappedComponent.getInitialProps) {
-      const wrappedProps = await WrappedComponent.getInitialProps({...context});
-      return { ...wrappedProps };
+     useEffect(() => {
+         if (!user) {
+    Router.replace(login);
     }
+  }, [user])
 
-    return { };
-  };
-
-  return hocComponent;
 };
+
+const withLogin = Component => ({...props}) => (<WrappedComponent>
+   <Component {...props} />
+   </WrappedComponent>);
+
+export default withLogin;

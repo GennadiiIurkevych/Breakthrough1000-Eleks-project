@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "next/image";
-import styles from '../../styles/Header.module.scss';
+import styles from '../../styles/HeaderUA.module.scss';
 import Ukrflag from '../../public/Ukr_flag.gif';
 import Britishflag from '../../public/british-flag.gif';
 import Heart from '../../public/beating-heart.gif';
@@ -10,11 +10,11 @@ import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import { purple } from '@mui/material/colors';
-import { useUserContext } from "../../src/contexts/UserContext";
+import { useUserContext } from "../contexts/UserContext";
 import Router from 'next/router';
 
 
-const Header = ({children, keywords}) => {
+const HeaderUA = ({children, keywords}) => {
   
   const {user} = useUserContext();
 
@@ -28,28 +28,28 @@ const Header = ({children, keywords}) => {
       return (<>
         <div className={styles.maincontainer}>
           <div className={styles.header}>
-           <Link className={styles.pageHome} href={'/'}>
+            <Link className={styles.pageHome} href={'/HomeUA'}>
               <a className={styles.pageHome}>
                 <Image className={styles.heart} src={Heart} width={130} alt="heart"/>
-              <h1 className={styles.h}>Breakthrough<span className={styles.p}>1000</span></h1>
+              <h1 className={styles.h}>ПРОРИВ<span className={styles.p}>1000</span></h1>
               </a>
             </Link>
             <div className={styles.nav}>
               <Stack spacing={2} direction="row">
                 <BootstrapButton variant="contained" disableRipple>
-                  <A href={'/'} text="HOME"/>
+                  <A href={'/HomeUA'} text="ДОМАШНЯ"/>
                 </BootstrapButton>
                 <BootstrapButton variant="contained" disableRipple>
-                  <A href={'/users'} text="HEALTH DAIRY" onClick={requireAuth}/>
+                  <A href={'/users'} text="ЩОДЕННИК ЗДОРОВ'Я" onClick={requireAuth}/>
                 </BootstrapButton>
                 <BootstrapButton variant="contained" disableRipple>
-                  <A href={'/advices'} text="ADVICE" onClick={requireAuth}/>
+                  <A href={'/advices'} text="ПОРАДИ" onClick={requireAuth}/>
                 </BootstrapButton>
                 <BootstrapButton variant="contained" disableRipple>
-                  <A href={'/login'} text="LOG IN" onClick={requireAuth}/>
+                  <A href={'/login'} text="АВТОРИЗАЦІЯ" onClick={requireAuth}/>
                 </BootstrapButton>
                 <BootstrapButton variant="contained" disableRipple>
-                  <A href={'/archive'} text="MY ARCHIV" onClick={requireAuth}/>
+                  <A href={'/archive'} text="МІЙ АРХІВ" onClick={requireAuth}/>
                 </BootstrapButton>
               </Stack>
             </div>
@@ -74,7 +74,7 @@ const Header = ({children, keywords}) => {
 };
 
 
-export default Header;
+export default HeaderUA;
 
 const BootstrapButton = styled(Button)({
   boxShadow: 'none',

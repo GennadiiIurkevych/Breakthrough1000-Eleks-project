@@ -4,6 +4,7 @@ import Variants from "../src/components/skeleton.js";
 import { useState } from "react";
 import DairyCard from "./dairyCard";
 import PrivateRoute from '../src/hoc';
+import withLogin from '../src/hoc';
 
 const Users = ({ users }) => {
   const [items, setItems] = useState([]);
@@ -24,4 +25,7 @@ const Users = ({ users }) => {
   );
 };
 
-export default Users;
+// export default Users;
+
+const WrappedAdvice = withLogin(Users);
+export default WrappedAdvice;
