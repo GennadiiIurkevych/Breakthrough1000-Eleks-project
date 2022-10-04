@@ -1,25 +1,24 @@
 
 import Router from 'next/router';
-//import useUserContext from './hoc';
 import React, { useEffect } from 'react';
 import { useUserContext } from './contexts/UserContext';
 
-const login = '/login'; 
+const login = '/login';
 
+const WrappedComponent = ({ children }) => {
+  const { user } = useUserContext();
 
-  const WrappedComponent = ({children}) => {
-     const {user} = useUserContext();
-    
-     useEffect(() => {
-         if (!user) {
-    Router.replace(login);
+  useEffect(() => {
+    if (!localStorage?.getItem?.('wasLoggedIn') && !user) {
+      Router.replace(login);
     }
   }, [user])
 
+  return <>{children}</>
 };
 
-const withLogin = Component => ({...props}) => (<WrappedComponent>
-   <Component {...props} />
-   </WrappedComponent>);
+const withLogin = Component => ({ ...props }) => (<WrappedComponent>
+  <Component {...props} />
+</WrappedComponent>);
 
 export default withLogin;

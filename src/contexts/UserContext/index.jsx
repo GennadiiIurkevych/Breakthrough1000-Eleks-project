@@ -3,9 +3,10 @@ import jwt_decode from "jwt-decode";
 
 const defaultValue = {
     user: null,
-    setUser: () => {},
-    logout: () => {},
+    setUser: () => { },
+    logout: () => { },
 };
+let localStorage = globalThis.localStorage ?? {};
 
 const UserContext = React.createContext(defaultValue);
 
@@ -16,11 +17,14 @@ export const UserProvider = ({ children }) => {
     function handleCallbackResponse(response) {
         let userObject = jwt_decode(response.credential);
         setUser(userObject);
+        localStorage.setItem('wasLoggedIn', '1');
+        setAllowRender(true);
     }
 
     useEffect(() => {
+        setAllowRender(!!localStorage?.getItem?.('wasLoggedIn'))
         /*global google */
-        google.accounts.id.initialize({
+        const a = google.accounts.id.initialize({
             client_id: `${process.env.NEXT_PUBLIC_CLIENT_ID}.apps.googleusercontent.com`,
             callback: handleCallbackResponse,
             auto_select: true,
@@ -43,6 +47,7 @@ export const UserProvider = ({ children }) => {
                 logout: () => {
                     setUser(null);
                     google.accounts.id.revoke();
+                    localStorage?.removeItem('wasLoggedIn');
                 },
             }}
         >
