@@ -20,8 +20,8 @@ import stylesss from "../styles/dairyCard.module.scss";
 //     "1013011122550-bv212pstd93h8ccikq8t9rokvp27sng4.apps.googleusercontent.com";
 
 export default function Home({ cards }) {
-    // const todayDate = formatDate(new Date());
-    // const [date, setDate] = useState(todayDate);
+     const todayDate = formatDate(new Date());
+     const [date, setDate] = useState(todayDate);
     // useEffect(() => {
     //     function start() {
     //         gapi.client.init({
@@ -47,10 +47,10 @@ export default function Home({ cards }) {
                             className={` ${styless.form2__input} ${styless.form2__inputText} `}
                             width={300}
                             placeholder=" "
-                            // value={date}
-                            // onChange={(e) => {
-                            //     setDate(e.target.value);
-                            // }}
+                             value={date}
+                             onChange={(e) => {
+                                setDate(e.target.value);
+                             }}
                         />
                         <label for="" className={stylesss.form2__label}>
                             DATE
@@ -82,5 +82,17 @@ export default function Home({ cards }) {
             <LogoutButton /> */}
         </>
     );
+    
+    function padTo2Digits(num) {
+        return num.toString().padStart(2, "0");
+    }
+    
+    function formatDate(date) {
+        return [
+            date.getFullYear(),
+            padTo2Digits(date.getMonth() + 1),
+            padTo2Digits(date.getDate()),
+        ].join("-");
+    }
 }
 

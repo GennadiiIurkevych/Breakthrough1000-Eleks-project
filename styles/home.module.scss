@@ -49,7 +49,7 @@ $input-color: aqua;
     }
     &__inputText{
       text-align: center;
-      font-size: 44px;
+      font-size: 48px;
       color: $first-color;
     }
     &__inputWeigth {
@@ -71,10 +71,11 @@ $input-color: aqua;
 .mainBlock {
   display: flex;
   margin-left: 20px;
+  height: 800px;
 }
 
 .blockFitness {
-  margin-top: 100px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   width: 600px;
@@ -90,9 +91,11 @@ $input-color: aqua;
 .blockPictures {
   display: flex;
   flex-direction: column;
+  margin-top: -50px;
 }
 
 .blockButtons {
+  margin-top: -38px;
   margin-left: 20px;
   display: flex;
   flex-direction: column; 
@@ -106,8 +109,7 @@ $input-color: aqua;
 }
 
 .buttons2 {
-  margin-top: 80px;
-  margin-bottom: 40px;
+  margin-top: 60px;
   border: 6px solid $first-color;
   width: 900px;
 }
@@ -116,6 +118,6 @@ $input-color: aqua;
   display: flex;
   height: 600px;
   position: absolute;
-  margin-top: 100px;
+  margin-top: 40px;
   margin-left: 1460px;
 }
