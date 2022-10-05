@@ -8,7 +8,7 @@ import Fitness from '../public/Fitness.png';
 import styless from "../styles/home.module.scss";
 import { useState } from "react";
 import Pulse from "../public/Pulse.png";
-import Timer from "../public/Timer.png";
+import Timer from "../public/Timer2.gif";
 import stylesss from "../styles/dairyCard.module.scss";
 
 // import LoginButton from "../src/components/login";
@@ -61,7 +61,7 @@ export default function Home({ cards }) {
                         
                     </div>
                     <div className={styless.blockPictures}>
-                        <Image className={styless.pulse} width={400} height={300} src={Pulse} alt="pulse" />
+                        <Image className={styless.pulse} width={380} height={300} src={Pulse} alt="pulse" />
                         <Image className={styless.timer} width={200} height={350} src={Timer} alt="timer" />
                         <Image className={styless.fire} width={300} height={200} src={Fire} alt="fire"/> 
                     </div>

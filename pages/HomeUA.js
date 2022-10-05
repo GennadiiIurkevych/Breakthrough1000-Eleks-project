@@ -12,7 +12,7 @@ const HomeUA = () => {
     <>
       <HeaderUA keywords={HomeUA} />
       <div className={styles.home}>
-        <Typography>Щось так не хочетсья верстати((</Typography>
+        
       </div>
       
     </>
