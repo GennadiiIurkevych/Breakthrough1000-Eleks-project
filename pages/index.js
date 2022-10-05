@@ -66,7 +66,7 @@ export default function Home({ cards }) {
                         <Image className={styless.fire} width={300} height={200} src={Fire} alt="fire"/> 
                     </div>
                     <div className={styless.blockButtons}>
-                        <button className={` ${styless.form2__input} ${styless.form2__inputText} ${styless.buttons} `}>PULS</button>
+                        <button className={` ${styless.form2__input} ${styless.form2__inputText} ${styless.buttons} `}>PULSE</button>
                         <button className={` ${styless.form2__input} ${styless.form2__inputText} ${styless.buttons} `}>TIMER</button>
                         <button className={` ${styless.form2__input} ${styless.form2__inputText} ${styless.buttons2} `} >BURNED TODAY KCAL</button>
                        
