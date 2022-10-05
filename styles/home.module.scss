@@ -1,7 +1,121 @@
-.home {
-  padding: 0 ;
-  width: 96%; 
-  background-position: center;
-  background-image: url("../public/Backgr.jpg");
-  background-size: cover;
+$first-color: blue;
+$input-color: aqua;
+
+// //.home {
+//   padding: 0 ;
+//   width: 96%; 
+//   background-position: center;
+//   background-image: url("../public/Backgr.jpg");
+//   background-size: cover;
+// }
+
+.form2 {
+  width: 600px;
+  padding: 4rem 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px rgba(10, 6, 236, 0.2);
+  color: $first-color;
+   &__div{
+    position: relative;
+    border-radius: 12px;
+    color: $first-color;
+    background: $input-color;
+   }
+    &__div1{
+      width: 500px;
+    }
+    &__div2{
+      width: 300px;
+    }
+    &__div3{
+      width: 460px;
+    }
+    &__input{
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      //width: 100%;
+      // height: 100%;
+      font-size: 44px;
+      font-weight: 700;
+      border: 6px solid $first-color;
+      border-radius: .6rem;
+      outline: none;
+      padding: .5rem;
+      background: none;
+      // z-index: 1;
+      color: rgb(202, 19, 5);
+      font-family: 'Roboto', sans-serif; 
+    }
+    &__inputText{
+      text-align: center;
+      font-size: 44px;
+      color: $first-color;
+    }
+    &__inputWeigth {
+      color: $first-color;
+    }
+    &__label{
+      position: absolute;
+      left: 5rem;
+      top: 1rem;
+      padding: 0 0.25rem;
+      background-color: aqua;
+      color: blue;
+      font-size: 30px;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+}
+
+.mainBlock {
+  display: flex;
+  margin-left: 20px;
+}
+
+.blockFitness {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 900px;
+}
+
+.fitness {
+  display: flex;
+  width: 800px;
+  margin-top: -10px;
+  margin-left: -120px;
+}
+
+.blockPictures {
+  display: flex;
+  flex-direction: column;
+}
+
+.blockButtons {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column; 
+}
+
+.buttons {
+  margin-top: 110px;
+  margin-bottom: 128px;
+  border: 6px solid $first-color;
+  width: 400px;
+}
+
+.buttons2 {
+  margin-top: 120px;
+  margin-bottom: 40px;
+  border: 6px solid $first-color;
+  width: 900px;
+}
+
+.moon {
+  display: flex;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 1460px;
 }
