@@ -90,7 +90,7 @@ const Cards = ({ cards }) => {
     );
 };
 
-// export default Cards;
+export default Cards;
 
 
 // export default class Fcomponent extends Component {
