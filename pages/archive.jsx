@@ -20,20 +20,20 @@ function Archive({cards}) {
   )
 }
 
-export const getStaticProps = async () => {
-  const response = await fetch('http://localhost:3000/api/cards');
-  const cards = await response.json();
+// export const getStaticProps = async () => {
+//   const response = await fetch('http://localhost:3000/api/cards');
+//   const cards = await response.json();
 
-  if (!cards) {
-    return {
-      notFound: true,
-    }
-  }
+//   if (!cards) {
+//     return {
+//       notFound: true,
+//     }
+//   }
 
-  return {
-    props: { cards: cards },
-  }
-};
+//   return {
+//     props: { cards: cards },
+//   }
+// };
 
 // export default Archive;
 const WrappedAdvice = withLogin(Archive);

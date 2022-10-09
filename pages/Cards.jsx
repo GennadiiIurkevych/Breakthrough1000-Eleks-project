@@ -4,6 +4,8 @@ import Stack from "@mui/material/Stack";
 import { Typography } from "@mui/material";
 import LinearBuffer from "./download.jsx";
 import { useUserContext } from "../src/contexts/UserContext";
+import { Component } from "react";
+
 
 const Cards = ({ cards }) => {
     const { user } = useUserContext();
@@ -88,7 +90,7 @@ const Cards = ({ cards }) => {
     );
 };
 
-export default Cards;
+// export default Cards;
 
 
 // export default class Fcomponent extends Component {
@@ -102,10 +104,9 @@ export default Cards;
 //   render() {
 //     return (
 //       <div>
-//         {/* <h1>Input: {this.props.date} (Fcomponent)</h1>
-//         <input value={this.props.input} onChange={this.props.handleChange} /> */}
-
-//         <button onClick={() => {this.props.updateData(this.state.name)}}>Press button</button>
+//         <h1>Input: {this.props.date} (Fcomponent)</h1>
+//         <input value={this.props.input} onChange={this.props.handleChange} />
+//         <button onClick={() => {this.props.upDateData(this.state.name)}}>Press button</button>
 //       </div>
 //     )
 //   }

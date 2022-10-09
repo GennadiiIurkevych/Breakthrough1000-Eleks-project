@@ -5,6 +5,7 @@ const Card = ({ card }) => {
   return (
     <div>Card</div>
   )
+
 }
 
 export const getStaticPaths = async () => {
@@ -24,7 +25,8 @@ export const getStaticProps = async (params) => {
     props: {
       card
     },
-    revalidate: 10
+    revalidate: 4
+    
   }
 
 }

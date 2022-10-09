@@ -1,4 +1,4 @@
-
+import { Component } from "react";
 // export default class ArciveCardsId extends Component {
 //   constructor(props) {
 //     super(props);
