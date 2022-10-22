@@ -39,30 +39,30 @@ export const cards = [
       kcal: 1050,
       weigth: 85.8,    
   },
-  {
-    id: '5',
-      date: "19.09.2022",
-      kcal: 1750,
-      weigth: 85.3,    
-  },
-  {
-    id: '6',
-      date: "20.09.2022",
-      kcal: 1250,
-      weigth: 85.6,    
-  },
-  {
-    id: '7',
-      date: "21.09.2022",
-      kcal: 1850,
-      weigth: 85.8,    
-  },
-  {
-    id: '8',
-      date: "22.09.2022",
-      kcal: 1450,
-      weigth: 85.2,    
-  },
+  // {
+  //   id: '5',
+  //     date: "19.09.2022",
+  //     kcal: 1750,
+  //     weigth: 85.3,    
+  // },
+  // {
+  //   id: '6',
+  //     date: "20.09.2022",
+  //     kcal: 1250,
+  //     weigth: 85.6,    
+  // },
+  // {
+  //   id: '7',
+  //     date: "21.09.2022",
+  //     kcal: 1850,
+  //     weigth: 85.8,    
+  // },
+  // {
+  //   id: '8',
+  //     date: "22.09.2022",
+  //     kcal: 1450,
+  //     weigth: 85.2,    
+  // },
 ];
 
 // export default class Fncomponent extends Component {

@@ -52,16 +52,12 @@ $color_4: white;
   display: $displ;
   align-items: flex-end;
   margin-bottom: 16px;
+
 }
 
-.link {
-  width: 126px;
-
-  text-align: center; 
-  text-decoration: none;
+.linkUA {
+  width: 160px;
   color: $color_3;
-  font-size: 24px;
-  margin: 5px;
   &:hover {
   border-color: $color_2;
   color: $color_1;

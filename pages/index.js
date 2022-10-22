@@ -1,4 +1,3 @@
-import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Header from "../src/components/Header";
 import Image from "next/image";
@@ -11,35 +10,14 @@ import Pulse from "../public/Pulse.png";
 import Timer from "../public/Timer2.gif";
 import stylesss from "../styles/dairyCard.module.scss";
 
-// import LoginButton from "../src/components/login";
-// import LogoutButton from "../src/components/logout";
-// import { useEffect } from "react";
-// import { gapi } from "gapi-script";
-
-// const clientId =
-//     "1013011122550-bv212pstd93h8ccikq8t9rokvp27sng4.apps.googleusercontent.com";
-
 export default function Home({ cards }) {
      const todayDate = formatDate(new Date());
      const [date, setDate] = useState(todayDate);
-    // useEffect(() => {
-    //     function start() {
-    //         gapi.client.init({
-    //             clientId: clientId,
-    //             scope: "",
-    //         });
-    //     }
-    //     gapi.load("client:auth2", start);
-    // });
 
     return (
         <>
             <Header />
             <div className={styles.container}>
-                <Head>
-                    <title>Breakthrough1000</title>
-                    <link rel="icon" href="/beating-heart.gif" />  
-                </Head>
                 <div className={styless.mainBlock}>
                     <div className={styless.blockFitness}>
                         <input
@@ -68,7 +46,7 @@ export default function Home({ cards }) {
                     <div className={styless.blockButtons}>
                         <button className={` ${styless.form2__input} ${styless.form2__inputText} ${styless.buttons} `}>PULSE</button>
                         <button className={` ${styless.form2__input} ${styless.form2__inputText} ${styless.buttons} `}>TIMER</button>
-                        <button className={` ${styless.form2__input} ${styless.form2__inputText} ${styless.buttons2} `} >BURNED TODAY KCAL</button>
+                        <button className={` ${styless.form2__input} ${styless.form2__inputText} ${styless.buttons2} `}>BURNED KCAL TODAY</button>
                        
                     </div>
                     <div className={styless.moon}>
@@ -77,9 +55,6 @@ export default function Home({ cards }) {
                       
                 </div>
             </div>
-            
-            {/* <LoginButton />
-            <LogoutButton /> */}
         </>
     );
     

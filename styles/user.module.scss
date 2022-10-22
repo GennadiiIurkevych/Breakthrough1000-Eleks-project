@@ -1,0 +1,19 @@
+.user, .todoItem, .form {
+  display: flex;
+  align-items: center;
+  border: 2px solid blue;
+  flex-direction: column;
+  width: 500px;
+  
+  margin: 10px;
+}
+
+.firstNames, .lastNames, .firstName, .lastName, .pathFirstName, .pathLastName, .todoComplete, .todoText, .todoDelete, .formInput, .formButton {
+  display: block;
+  border: 2px solid blue;
+  font-size: large bold;
+  width: 400px;
+  height: 40px;
+  align-items: center;
+  margin: 10px;
+}

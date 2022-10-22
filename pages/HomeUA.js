@@ -1,20 +1,13 @@
 import HeaderUA from '../src/components/HeaderUA';
-import styless from '../styles/home.module.scss';
-import styles from "../styles/Home.module.css";
-import { Typography } from '@mui/material';
-
-
-
-
+import styless from "../styles/HomeUA.module.css";
 
 const HomeUA = () => {
   return (
     <>
       <HeaderUA keywords={HomeUA} />
-      <div className={styles.home}>
+      <div className={styless.home}>
         
       </div>
-      
     </>
   ); 
 };
